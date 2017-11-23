@@ -6,6 +6,8 @@ Depeche is a personal messaging protocol that enables communication even when th
 not available - At the same time offering anonymity and confidentiality for both sender and
 receiver. All at the small cost of reliability!
 
+For an implementation of the protocol, [see DeDe, the Depeche demonstrator](https://github.com/depeche-protocol/dede)
+
 ## Use cases
 
 For use when the internet is broken. Maybe an extended power-outage, maybe a natural disaster
