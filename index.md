@@ -15,7 +15,7 @@ such as a flood or earthquake, maybe a man made outage due to war, terror attack
 shutdown, maybe just poverty or poor telephone coverage.
 
 It is **not** for instant messaging, sending streaming data or surfing the web with low latency.
-By its very nature, latency is high and message deliery is up to either deliberate delivery or
+By its very nature, latency is high and message delivery is up to either deliberate relay or
 good fortune.
 
 ## How it works
@@ -28,18 +28,64 @@ In order to bootstrap participation in the Depeche network, an operation called 
 is needed. During the rendezvous, your own addresses get known by at least one other node and
 can thence be distributed to other node operators tha may wish to contact you.
 
+### An example of use
+
+Alain wants to sent a depeche to a friend of his, Célestin, whom he rarely gets to meet. They
+have a common friend, Berthe, whom they both meet regularly and who is also a Depeche user.
+When Alain next meets Berthe, he asks her to have a short rendezvous. They agree on a shared
+secret to protect their communications and then exchange addresses and keys with each other.
+Once Berthe has one of Alains addresses, she can then send one of Célestins address-and-key pairs
+(one she would otherwise use to send a message to Célestin) to Alain. Alain may then compose his
+message to Célestin and exchange messages with Berthe. When Berthe next meets with Célestin and
+exchange messages, Alain's message will reach Célestin.
+
+The example might seem a bit complicated, but most of the complexity will be handled by their
+respective node implementations.
+
+## Threat models
+
+The protocol is intended primarily for use in **non-hostile environments**, such as during
+emergencies or generally poor internet connectivity. In this kind of environment, the primary
+threats are third parties interested in reading, modifying or interrupting individual
+communications: A nosy neighbour, a business competitor, a creditor, a disgruntled relative etc.
+
+For this kind of threat, the protocol offers anonymity of both sender and recipient. This means
+that a third party cannot be sure of either origin or recipient, and hence cannot reliably
+interrupt communications by other means than refusing to relay messages. Message encryption means
+that the message payload cannot be eavesdropped or modified - A modified message would be
+indecipherable even if the third party were to know the sender and recipient.
+
+In **hostile, high threat environments** - such as under a repressive regime, the protocol can also
+be used. The same protections as in the non-hostile situation applies, but in this case even
+posession of encrypted messages might be a punishable offence. Extreme care needs to be excercised,
+especially when it comes to rendezvous, which generally requires close physical proximity of
+the participants. The protocol in itself is hence not enough to protect users in hostile
+environments - A very high level of operational security needs to be maintained.
+
+When usage of Depece faces adversaries, denial of service is a real threat - The easiest way to
+affect that is through message flooding. This will force nodes to reject messages due to filling
+of storage buffers. In order to combat this, some form of message priority is needed. There
+are currently three different methods envisioned - They will be detailed at a later stage:
+
+* Circle-of-friends (suitable for use by private persons)
+* Trust hierarchy (suitable for use by organisations)
+* Voice servers (suitable when trusted third party is available)
+
+## Technical overview
+
 The protocol consist of several parts, some of them form the "core" protocol, others parts
 are meant to facilitate special cases or specialized usage.
 
 ### Message format
 
+The message format itself forms the kernel of the protocol.
 A message transmitted through use of the Depeche protocol (henceforth called a *depeche*, in
 order to differentiate from other types of messages) is formatted as a JSON structure with
 a few headers and an encrypted payload. The encrypted payload can be decrypted by a recipient
 node and the contents should be a MIME-formatted message. The MIME payload is usually a
 multipart message. Some message types form their own part of the Depeche protocol.
 
-For a detailed specification, see ()
+For a detailed specification, see [the message format specification](message_format.md)
 
 ### Rendezvous
 
@@ -52,6 +98,21 @@ TCP/IP.
 
 Exchanging depeches among nodes is the fundamental way of transporting information through
 the Depeche network.
+
+### Carrier protocols
+
+Depeche is designed to be usable in many different circumstances, using different hardware
+and communications capabilities. Carrier protocols are the underlying communications methods
+that nodes may use to connect to each other. Though TCP and UDP are currently the only carrier
+protocols that have specifications for how to do rendezvous and exchange, other possibilities
+might include:
+
+* Bluetooth
+* NFC
+* Audio modem
+* Camera-and-screen (typically using mobile phones with high-res cameras and screens using QR codes)
+* IrDA
+* VHF radio
 
 ## Current state
 
