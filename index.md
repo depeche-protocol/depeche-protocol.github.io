@@ -6,7 +6,7 @@ Depeche is a personal messaging protocol that enables communication even when th
 not available - At the same time offering anonymity and confidentiality for both sender and
 receiver. All at the small cost of reliability!
 
-For an implementation of the protocol, [see DeDe, the Depeche demonstrator](https://github.com/depeche-protocol/dede)
+For an implementation of the protocol, [see DeDe](https://github.com/depeche-protocol/dede)
 
 ## Use cases
 
@@ -26,7 +26,16 @@ then passed from node to node until it (hopefully) reaches its destination.
 
 In order to bootstrap participation in the Depeche network, an operation called a *rendezvous*
 is needed. During the rendezvous, your own addresses get known by at least one other node and
-can thence be distributed to other node operators tha may wish to contact you.
+can thence be distributed to other node operators that may wish to contact you.
+
+To conceal both sender and recipient, a system of one-time-addresses is used. Participants
+exchange lists of these in the shape of *address pads* that are then used up over time. The
+one-time nature of the addresses and the fact that only the sender and recipient knows them
+make the protocol resistant to traffic analysis.
+
+Messages are transferred promiscously - The reproduction cost of data is so close to zero that
+this is affordable. This means that routing or message paths are not available for anaysis either.
+The downside is that messages may easily get lost and never reach their intended recipient.
 
 ### An example of use
 
@@ -97,7 +106,13 @@ TCP/IP.
 ### Message exchange
 
 Exchanging depeches among nodes is the fundamental way of transporting information through
-the Depeche network.
+the Depeche network. Message exchange can occur in many ways - Currently the specifications
+support mutual exchange over TCP by two typically non-server nodes, but other models are certainly
+possible. Examples might include:
+
+* Handover of USB sticks
+* One-way radio transmissions
+* General HTTP or FTP transfer
 
 ### Carrier protocols
 
@@ -117,15 +132,19 @@ might include:
 ## Current state
 
 The current state of the protocol is that the basic functionality has been specified and
-that this is covered by a reference implementation (included in this repository) has been
-coded in Python. The current operations are:
+that this is covered by a reference implementation, [DeDe](https://github.com/depeche-protocol/dede)
+has been coded in Python. The current operations are:
 
-* Rendezvous on an ethernet network
+* Rendezvous on a local TCP network, such as WiFi or ethernet
 * Message exchange among nodes on a local network
 * Forwarding of node addresses (own or foreign) via messages
 
 ## Areas of improvement
 
+The protocol is still very much a work in progress and there are many ways in which it might
+be improved and extended. This is just a taste of what remains:
+
 * Message priority schemes (mitigates flooding DOS attacks)
 * Message signing (might be good or bad, depending on circumstances)
-* Internet support (when the Internet is available, make use of it)
+* Internet support (when the Internet is available, make use of common carrier protocols such as HTTP)
+* Signing of messages and letters of recommendation (increasing trust in the senders)
