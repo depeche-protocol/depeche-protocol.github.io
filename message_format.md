@@ -45,10 +45,10 @@ it is a legal format. The [JSON schema](http://json-schema.org) for a depeche is
 The payload of the depeche is a MIME-message, usually a multipart mail message. A payload may
 contain parts that convey information in for use in the protocol itself. These are currently:
 
-* **Address pad request** - A message part that has Content-Type: 'application/json' and
-  Content-Description: 'depeche/address_pad_request'
-* **Address pad** - A message part that has Content-Type: 'application/json' and
-  Content-Description: 'address_pad'
+* **Address pad request** - A message part that has `Content-Type: 'application/json'` and
+  `Content-Description: 'depeche/address_pad_request'`
+* **Address pad** - A message part that has `Content-Type: 'application/json'` and
+  `Content-Description: 'address_pad'`
 
 ### Address pad request
 
