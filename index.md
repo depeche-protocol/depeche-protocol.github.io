@@ -42,7 +42,7 @@ The downside is that messages may easily get lost and never reach their intended
 Alain wants to sent a depeche to a friend of his, Célestin, whom he rarely gets to meet. Alain and
 Célestin have previously met and performed a rendezvous, so they have a store of each other addresses.
 They have a common friend, Berthe, whom they both meet regularly and who is also a Depeche user.
-He first composes his message and when Alain next meets Berthe, he asks her to exchange messages.
+Alain first composes his message and when he next meets Berthe, he asks her to exchange messages.
 When Berthe next meets with Célestin and exchange messages, Alain's message will reach Célestin.
 
 If Alain has no friend that he can rely on to relay his message, an option would be to just
