@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="37cm" height="17cm" viewBox="160 159 734 322" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <rect style="fill: #ffffff" x="320" y="160" width="80" height="40"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="320" y="160" width="80" height="40"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="360" y="183.9">
+      <tspan x="360" y="183.9">Alain</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="480" y="160" width="80" height="40"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="480" y="160" width="80" height="40"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="520" y="183.9">
+      <tspan x="520" y="183.9">Berthe</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="640" y="160" width="80" height="40"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="640" y="160" width="80" height="40"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="680" y="183.9">
+      <tspan x="680" y="183.9">Célestin</tspan>
+    </text>
+  </g>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="360" y1="200" x2="360" y2="480"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="520" y1="200" x2="520" y2="480"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="680" y1="200" x2="680" y2="480"/>
+  <g>
+    <rect style="fill: #bfbfbf" x="160" y="228.1" width="172" height="30.9"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="160" y="240">
+      <tspan x="160" y="240">Alain and Berthe trade</tspan>
+      <tspan x="160" y="256">addresses with each other.</tspan>
+    </text>
+  </g>
+  <g>
+    <g>
+      <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="520" y1="420" x2="670.264" y2="420"/>
+      <polygon style="fill: #000000" points="677.764,420 667.764,425 670.264,420 667.764,415 "/>
+      <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="677.764,420 667.764,425 670.264,420 667.764,415 "/>
+    </g>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="572" y="413">
+      <tspan x="572" y="413">Exchange</tspan>
+    </text>
+  </g>
+  <g>
+    <g>
+      <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="360" y1="360" x2="510.264" y2="360"/>
+      <polygon style="fill: #000000" points="517.764,360 507.764,365 510.264,360 507.764,355 "/>
+      <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="517.764,360 507.764,365 510.264,360 507.764,355 "/>
+    </g>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="407" y="355">
+      <tspan x="407" y="355">Exchange</tspan>
+    </text>
+  </g>
+  <g>
+    <g>
+      <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="520" y1="300" x2="369.736" y2="300"/>
+      <polygon style="fill: #000000" points="362.236,300 372.236,295 369.736,300 372.236,305 "/>
+      <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="362.236,300 372.236,295 369.736,300 372.236,305 "/>
+    </g>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="400.1" y="292.4">
+      <tspan x="400.1" y="292.4">Introduction</tspan>
+    </text>
+  </g>
+  <g>
+    <g>
+      <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="369.736" y1="240" x2="510.264" y2="240"/>
+      <polygon style="fill: #000000" points="362.236,240 372.236,235 369.736,240 372.236,245 "/>
+      <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="362.236,240 372.236,235 369.736,240 372.236,245 "/>
+      <polygon style="fill: #000000" points="517.764,240 507.764,245 510.264,240 507.764,235 "/>
+      <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="517.764,240 507.764,245 510.264,240 507.764,235 "/>
+    </g>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="401" y="232">
+      <tspan x="401" y="232">Rendezvous</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #bfbfbf" x="160" y="288.1" width="152.8" height="30.9"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="160" y="300">
+      <tspan x="160" y="300">Berthe sends an one of </tspan>
+      <tspan x="160" y="316">Célestins addresses.</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #bfbfbf" x="160" y="348.1" width="180.5" height="46.9"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="160" y="360">
+      <tspan x="160" y="360">Alain and Berthe exchange </tspan>
+      <tspan x="160" y="376">messages. Alains message</tspan>
+      <tspan x="160" y="392">to Célestin starts spreading.</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #bfbfbf" x="700" y="408.1" width="193.05" height="46.9"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="700" y="420">
+      <tspan x="700" y="420">Berthe and Célestin exchange</tspan>
+      <tspan x="700" y="436">messages. Alains message</tspan>
+      <tspan x="700" y="452">arrives.</tspan>
+    </text>
+  </g>
+</svg>

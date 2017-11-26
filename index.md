@@ -48,6 +48,8 @@ Once Berthe has one of Alains addresses, she can then send one of Célestins add
 message to Célestin and exchange messages with Berthe. When Berthe next meets with Célestin and
 exchange messages, Alain's message will reach Célestin.
 
+![Interaction chart](depeche_example.svg)
+
 The example might seem a bit complicated, but most of the complexity will be handled by their
 respective node implementations.
 
