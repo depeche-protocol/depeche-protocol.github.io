@@ -147,3 +147,5 @@ be improved and extended. This is just a taste of what remains:
 * Internet support (when the Internet is available, make use of common carrier protocols such as HTTP)
 * Signing of messages and letters of recommendation (increasing trust in the senders and reducing
   risk of MITM attacks)
+* Persistent addresses (for use in initiating communication without rendezvous, though this has other
+  risks and trust issues)
