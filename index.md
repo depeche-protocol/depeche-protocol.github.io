@@ -39,23 +39,15 @@ The downside is that messages may easily get lost and never reach their intended
 
 ### An example of use
 
-Alain wants to sent a depeche to a friend of his, Célestin, whom he rarely gets to meet. They
-have a common friend, Berthe, whom they both meet regularly and who is also a Depeche user.
-When Alain next meets Berthe, he asks her to have a short rendezvous. They agree on a shared
-secret to protect their communications and then exchange addresses and keys with each other.
-Once Berthe has one of Alains addresses, she can then send one of Célestins address-and-key pairs
-(one she would otherwise use to send a message to Célestin) to Alain. Alain may then compose his
-message to Célestin and exchange messages with Berthe. When Berthe next meets with Célestin and
-exchange messages, Alain's message will reach Célestin.
+Alain wants to sent a depeche to a friend of his, Célestin, whom he rarely gets to meet. Alain and
+Célestin have previously met and performed a rendezvous, so they have a store of each other addresses.
+They have a common friend, Berthe, whom they both meet regularly and who is also a Depeche user.
+He first composes his message and when Alain next meets Berthe, he asks her to exchange messages.
+When Berthe next meets with Célestin and exchange messages, Alain's message will reach Célestin.
 
-![Interaction chart](depeche_example.svg)
-
-The example might seem a bit complicated, but most of the complexity will be handled by their
-respective node implementations.
-
-(Also worthy of note is that in the above example, Berthe may inject herself as a man-in-the-middle -
-Alain should really consider meeting Célestin in the flesh. In general, introductions should
-only be accepted from people you really trust)
+If Alain has no friend that he can rely on to relay his message, an option would be to just
+keep exchanging messages with anyone available, in the hopes that the message will find its
+way to Célestin. It might, but Alain can never be really sure until he receives a reply.
 
 ## Threat models
 
@@ -153,4 +145,5 @@ be improved and extended. This is just a taste of what remains:
 * Message priority schemes (mitigates flooding DOS attacks)
 * Message signing (might be good or bad, depending on circumstances)
 * Internet support (when the Internet is available, make use of common carrier protocols such as HTTP)
-* Signing of messages and letters of recommendation (increasing trust in the senders)
+* Signing of messages and letters of recommendation (increasing trust in the senders and reducing
+  risk of MITM attacks)
