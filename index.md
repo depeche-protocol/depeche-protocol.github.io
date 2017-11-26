@@ -53,6 +53,10 @@ exchange messages, Alain's message will reach Célestin.
 The example might seem a bit complicated, but most of the complexity will be handled by their
 respective node implementations.
 
+(Also worthy of note is that in the above example, Berthe may inject herself as a man-in-the-middle -
+Alain should really consider meeting Célestin in the flesh. In general, introductions should
+only be accepted from people you really trust)
+
 ## Threat models
 
 The protocol is intended primarily for use in **non-hostile environments**, such as during
