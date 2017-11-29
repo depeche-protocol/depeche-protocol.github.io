@@ -18,6 +18,8 @@ It is **not** for instant messaging, sending streaming data or surfing the web w
 By its very nature, latency is high and message delivery is up to either deliberate relay or
 good fortune.
 
+There are also [a few scenarios that illustrate how Depeche can be used.](scenarios.md)
+
 ## How it works
 
 The broad overview is that each participaring device (henceforth called a *node*) in the Depeche
