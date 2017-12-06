@@ -100,8 +100,8 @@ For a detailed specification, see [the message format specification](message_for
 
 A fundamental part of the bootstrapping of a nodes participation in exchanging depeches is
 the rendezvous. Rendezvous is envisioned as possible over several different carrier protocols,
-but at present, the only well specified such methid is over a local network through UDP and
-TCP/IP.
+but at present, the only well specified such method is over a local network through UDP and
+TCP/IP - It's called the [naive protocol](tcp_carrier_protocol.md).
 
 ### Message exchange
 
