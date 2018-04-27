@@ -9,6 +9,7 @@ called a *depeche*. First a sample:
 {
     "to_address": "23423423423444353453455345345345",
     "send_time": "2001-12-31T21:33:44",
+    "forward_to": "http://deadlett.er/drop/1234"
     "contents": "aasdadfsdjsdgkjsfkdlajfksfjfghjkfhsjkdfhksdfakjdhfskjdfhdskjfh"
 }
 ```
@@ -24,11 +25,15 @@ it is a legal format. The [JSON schema](http://json-schema.org) for a depeche is
     "type": "object",
     "properties": {
         "to_address": {
-            "description": "The address to which this depeche should be relayed",
+            "description": "The address to which this depeche should be relayed; the recipient",
             "type": "string"
         }
         "send_time": {
             "description": "The time at which the original sender constructed the depeche"
+            "type": "string"
+        }
+        "forward_to": {
+            "description": "A location where the recipient might look for the message: a dead letter drop identifier"
             "type": "string"
         }
         "contents": {
